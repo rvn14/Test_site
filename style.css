@@ -37,7 +37,7 @@ body{
     height: 570px;
     position: absolute;
     top: 120px;
-
+    user-select: none;
 }
 
 .btn{
