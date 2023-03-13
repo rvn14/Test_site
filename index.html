@@ -8,20 +8,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,400;1,600;1,700;1,800&family=Source+Code+Pro:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+            rel="stylesheet">
     <link rel="icon" type="image/png" href="images/icon.png">
     <title>Testpage</title>
 </head>
 <body>
     <div class="container">
         <div class="navbar">
-            
+            <div class="logo">Audiowide</div>
+        <span class="material-symbols-outlined">
+            menu
+        </span>
         </div>
         <div class="content">
-            <div class="btn" onclick="rollup()">CLICK-ME</div>
-            <div class="imgbox">
+            
+            <div class="imgbox" >
                 <div class="canvas" id="canvas">
                     <a href="index.html"><div class="img" id="img"></div></a>
                 </div>
+            </div>
+        </div>
+        <div class="content" id="maincont">
+            <div class="note" id="note">
+                <div class="welcome">WELCOME</div>
+                <div class="note1">This is a test web page.</div>
+                <div class="note2">To proceed click below ⬇️</div>
+                <div class="btn" onclick="rollup()">CLICK-ME</div>
+
             </div>
         </div>
     </div>
@@ -32,14 +53,17 @@
 
     <script>
 
-        var canvas = document.getElementById("canvas");
         var img = document.getElementById("img");
+        var note = document.getElementById("note");
+        var maincont = document.getElementById("maincont");
 
         function rollup() {
-            canvas.style.top = "0px"
-            
-
+            note.style.opacity = "0%"
+            maincont.style.top = "-300px"
+            img.style.opacity = "100%";
+            img.style.zIndex = "5";
         }
+
 
     </script>
 </body>
