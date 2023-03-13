@@ -18,7 +18,9 @@
         <div class="content">
             <div class="btn" onclick="rollup()">CLICK-ME</div>
             <div class="imgbox">
-                <div class="canvas" id="canvas"></div>
+                <div class="canvas" id="canvas">
+                    <a href="index.html"><div class="img" id="img"></div></a>
+                </div>
             </div>
         </div>
     </div>
@@ -30,9 +32,12 @@
     <script>
 
         var canvas = document.getElementById("canvas");
+        var img = document.getElementById("img");
 
         function rollup() {
             canvas.style.top = "0px"
+            
+
         }
 
     </script>
