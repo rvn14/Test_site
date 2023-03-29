@@ -7,6 +7,21 @@ body{
     
 }
 /*PAGE 1*/
+
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+    height: 80px;
+    width: 100%;
+    background-color: rgba(200, 182, 255, 0.3);
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+
+}
 .page1{
     overflow-x: hidden;
     height: 100vh;
@@ -15,27 +30,17 @@ body{
     background-position: center;
     background-size: cover;
     position: relative;
-    background-blend-mode: ;
 
 }
 
-.navbar{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    /* border: 2px solid black; */
-    height: 80px;
-    background-color: rgba(200,182,255, 0.3);
-    
 
-}
 .navbar .logo{
     cursor: pointer;
     margin-left: 30px;
     font-family: 'Audiowide', cursive;
     color: #21295c;
     font-size: 30px;
+    /* border: 2px solid black; */
 }
 
 .navbar .nav-links{
@@ -59,12 +64,12 @@ body{
     font-family: poppins;
     /* border: 2px solid black; */
     border-radius: 12px;
-    padding: 1px 10px;
+    padding: 2px 10px;
     transition: 0.25s;
 }
 
 .navbar .nav-links a:hover{
-    background-color: #ffc6ff;
+    background-color: #ffd6ff;
     
 }
 .page2 {
