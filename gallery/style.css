@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.gallery{
+    border: 2px solid black;
+    height: 2000px;
+    margin: 80px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.gallery div{
+    border: 2px solid black;
+    height: 500px;
+}

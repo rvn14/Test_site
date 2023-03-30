@@ -11,7 +11,9 @@
         rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body id="body">
+
+    <div class="preloader" id="preloader" onclick="loade()"><img src="images/loader.gif" alt=""></div>
     <div class="navbar">
         <div class="logo">SPORTZILLA</div>
         <div class="nav-links">
@@ -23,25 +25,31 @@
             <a href="">ABOUT US</a>
         </div>
     </div>
-    <div class="page1">
-        <!-- <div class="navbar">
-            <div class="logo">SPORTZILLA</div>  
-            <div class="nav-links">
-                <a href="">HOME</a>
-                <a href="">GALLERY</a>
-                <a href="">SHOP</a>
-                <a href="">QUIZ</a>
-                <a href="">SITE MAP</a>
-            </div>    -->
+    <div class="page1" id="page1">
+        
         </div>
     </div>
     <div class="page2" id="page2">
         <div class="imgbox">
             <div class="container"><div><a href="">FOOTBALL</a></div></div>
-            <div class="container"></div>
-            <div class="container"></div>
-            <div class="container"></div>
+            <div class="container"><div><a href="">BASKETBALL</a></div></div>
+            <div class="container"><div><a href="">CRICKET</a></div></div>
+            <div class="container"><div><a href="">HOCKEY</a></div></div>
         </div>
+        
     </div>
+
+
+
+    <script>
+        let loader = document.getElementById("preloader")
+        let body = document.getElementById("body")
+
+        function loade() {
+            loader.style.top = "-1000px"
+            loader.style.opacity = "0%"
+            body.style.overflowY = "visible"
+        }
+    </script>
 </body>
 </html>

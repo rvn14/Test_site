@@ -4,6 +4,9 @@ html {
 body{
     margin: 0;
     padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
 }
 /*PAGE 1*/
 
@@ -16,8 +19,8 @@ body{
     /* border: 2px solid black; */
     height: 80px;
     width: 100%;
-    /* background-color: rgba(200, 182, 255, 0.3); */
-    position: absolute;
+    background-color: #001233;
+    position: fixed;
     top: 0px;
     z-index: 10;
 
@@ -75,13 +78,14 @@ body{
 .page2 {
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(#001233, #000000);
+    background-image: linear-gradient(rgba(0, 18, 51, 0.7), rgba(0, 0, 0, 0.9)), url(images/bg4.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .imgbox{
@@ -101,6 +105,7 @@ body{
     box-shadow: 5px 5px 10px #01122c;
     width: 20%;
     height: 80%;
+    overflow: hidden;
     
 
 }
@@ -112,9 +117,30 @@ body{
     justify-content: center;
     align-items: center;   
 }
+.container:nth-child(2) {
+    background-image: url(images/mini2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.container:nth-child(3) {
+    background-image: url(images/mini3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.container:nth-child(4) {
+    background-image: url(images/mini4.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
-.container:nth-child(1) div{
+.container div{
     opacity: 0;
     border-radius: 20px;
     height: 100%;
@@ -125,12 +151,37 @@ body{
     transition: 0.25s;
 }
 
-.container:nth-child(1) div:hover{
+.container div:hover{
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 100;
 }
-.container:nth-child(1) a{
+.container a{
     text-decoration: none;
     color: #ffffff;
     font-family: poppins;
+    font-size: 37px;
+}
+
+.preloader{
+    height: 100vh;
+    width: 100%;
+    background-color: #001d30;
+    z-index: 100;
+    overflow: hidden;
+    position: absolute;
+    /* visibility: hidden; */
+    transition: 3s;
+    transition-delay: 0.5s;
+    display: flex;
+    justify-content: center;
+    top: 0;
+}
+
+.preloader img{
+    position: relative;
+    width: 300px;
+    height: 225px;  
+    top: 75%;  
+
+
 }
