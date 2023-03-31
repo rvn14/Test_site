@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 
@@ -60,3 +59,134 @@
     background-color: #af16d5;
 
 }
+
+.viewbox{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    margin-top: 0px;
+    background-image: linear-gradient(rgba(0, 18, 51, 0.8), rgba(0, 0, 0, 0.9)), url(../images/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+
+    
+}
+
+
+  .Main1 {
+    stroke: #8338ec;
+    stroke-width: 10px;
+    position: absolute;
+    top: 222px;
+    /* border: 2px solid black; */
+  }
+
+  .sportzilla{
+    /* border: 2px solid black; */
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    border-radius: 50px;
+    top: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: audiowide;
+    font-size: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+  }
+
+
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    font-size: 30px;
+    font-family: poppins;
+    /* border: 2px solid black; */
+    border-radius: 50px;
+    transition: 0.25s;
+  }
+
+  .box:hover{
+    background-color: #8338ec;
+  }
+
+  .box a{
+    text-decoration: none;
+    color: white;
+    
+  }
+
+  #home{
+    top: 340px;
+    left: 70px;
+  }
+
+  #gallery{
+    top: 340px;
+    left: 365px;
+  }
+
+  #shop{
+    top: 340px;
+  }
+
+  #quiz{
+    top: 340px;
+    left: 965px;
+  }
+
+  #about{
+    top: 340px;
+    left: 1260px;
+  }
+
+  #foot{
+    top: 430px;
+    left: 70px;
+  }
+
+  #basket{
+    top: 480px;
+    left: 70px;
+  }
+
+  #cricket{
+    top: 530px;
+    left: 70px;
+  }
+
+  #hockey{
+    top: 580px;
+    left: 70px;
+  }
+
+  #name1 {
+      top: 430px;
+      left: 1260px;
+  }
+
+  #name2 {
+      top: 480px;
+      left: 1260px;
+  }
+
+  #name3 {
+      top: 530px;
+      left: 1260px;
+  }
+
+  #name4 {
+      top: 580px;
+      left: 1260px;
+  }
+
