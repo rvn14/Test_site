@@ -1,55 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="exstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,700;0,800;1,400;1,600;1,700;1,800&family=Source+Code+Pro:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Changa:wght@300&family=Cinzel&family=Montserrat:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,700;0,800;1,400;1,600;1,700;1,800&family=Source+Code+Pro:ital,wght@0,400;0,500;1,400;1,500&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <link href="presentationpage/Presentation_Page.css" rel="stylesheet" type="text/css">
+    <title>SPORTZILLA</title>
 </head>
-<body id="body">
 
-    <div class="preloader" id="preloader" onclick="loade()"><img src="images/loader.gif" alt=""></div>
+<body id="body">
+    <section class="loadbg">
+    <section class="load">
+        <script>
+
+            // setInterval(function () {
+            //     window.scrollBy(0, 300);
+            // }, 2000);
+
+        </script>
+        
+        <div class="logo"><img src="presentationpage/Images/iit.png" alt="logo" class="logo"></div>
+        
+        <!-- <hr> -->
+        <h1>Informatics Institute of Technology</h1>
+        <!-- <hr> -->
+        <h1><b>Web Design and Development</b></h1>
+        <h2><b>Coursework</b></h2>
+        <br>
+        <h1><b><u>Team Members</u></b></h1>
+        <table>
+            <tr>
+                <th colspan="1">Full Name</th>
+                <th colspan="1">UoW ID / IIT ID</th>
+            </tr>
+            <tr>
+                <td colspan="1"> Shashank Pratheepkumar </td>
+                <td colspan="1"> W1953148 / 20220191 </td>
+            </tr>
+            <tr>
+                <td colspan="1"> Jananthini Suresh </td>
+                <td colspan="1"> W1953142 / 20220180 </td>
+            </tr>
+            <tr>
+                <td colspan="1"> Wameesha Thilaksiri </td>
+                <td colspan="1"> W1953169 / 20220193 </td>
+            </tr>
+            <tr>
+                <td colspan="1"> Sakith Deepna Wijenanda </td>
+                <td colspan="1"> W1953187 / 20220273 </td>
+            </tr>
+        </table>
+        <br>
+    </section>
+    </section>
+    
     <div class="navbar">
         <div class="logo">SPORTZILLA</div>
         <div class="nav-links">
             <a href="index.html">HOME</a>
             <a href="gallery/gallery.html">GALLERY</a>
             <a href="">SHOP</a>
-            <a href="">QUIZ</a>
+            <a href="quiz/quiz.html">QUIZ</a>
             <a href="sitemap/sitemap.html">SITE MAP</a>
-            <a href="">ABOUT US</a>
+            <a href="about/memeber details.html">ABOUT US</a>
         </div>
     </div>
     <div class="page1" id="page1">
-        
-        </div>
+            <div class="wadana">"Sports teaches you character, it teaaches you to play by rules, it teaches you to know how it feels like to win and lose-it teaches you about life." <br> -Billie jean king-</div>
+    </div>
     </div>
     <div class="page2" id="page2">
         <div class="imgbox">
-            <div class="container"><div><a href="">FOOTBALL</a></div></div>
-            <div class="container"><div><a href="">BASKETBALL</a></div></div>
-            <div class="container"><div><a href="">CRICKET</a></div></div>
-            <div class="container"><div><a href="">HOCKEY</a></div></div>
+            <div class="container">
+                <div><a href="content/football.html">FOOTBALL</a></div>
+            </div>
+            <div class="container">
+                <div><a href="">BASKETBALL</a></div>
+            </div>
+            <div class="container">
+                <div><a href="">CRICKET</a></div>
+            </div>
+            <div class="container">
+                <div><a href="">HOCKEY</a></div>
+            </div>
         </div>
-        
+
     </div>
 
+    <footer>
+        <div class="lg">SPORTZILLA</div>
+        <div class="social">
+            <img src="images/youtube.png" alt="" width="50px" height="50px" class="ico">
+            <img src="images/facebook.png" alt="" width="50px" height="50px" class="ico">
+            <img src="images/twitter.png" alt="" width="50px" height="50px" class="ico">
+            <img src="images/instagram.png" alt="" width="50px" height="50px" class="ico">
+            <img src="images/whatsapp.png" alt="" width="50px" height="50px" class="ico">
+        </div>
+        <div class="copy">Copyright © SPORTZILLA</div>
+        <div class="editorlink">Designed by <a href="#">Jananthini</a></div>
+    </footer>
 
-
-    <script>
-        let loader = document.getElementById("preloader")
-        let body = document.getElementById("body")
-
-        function loade() {
-            loader.style.top = "-1000px"
-            loader.style.opacity = "0%"
-            body.style.overflowY = "visible"
-        }
-    </script>
 </body>
+
 </html>

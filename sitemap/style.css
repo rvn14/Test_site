@@ -5,67 +5,12 @@
 
 
 
-.navbar {
-    overflow-x: hidden;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    /* border: 2px solid black; */
-    height: 80px;
-    width: 100%;
-    background-color: #001233;
-    position: fixed;
-    top: 0px;
-    z-index: 10;
-}
-
-.navbar .logo {
-    cursor: pointer;
-    margin-left: 30px;
-    font-family: 'Audiowide', cursive;
-    color: white;
-    font-size: 30px;
-    /* border: 2px solid black; */
-}
-
-.navbar .nav-links {
-    /* border: 2px solid black; */
-    margin-right: 100px;
-    width: 40%;
-    display: flex;
-    align-content: space-between;
-    justify-content: space-between;
-    position: relative;
-    right: 40px;
-
-
-
-}
-
-.navbar .nav-links a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-family: poppins;
-    /* border: 2px solid black; */
-    border-radius: 12px;
-    padding: 2px 10px;
-    transition: 0.25s;
-}
-
-.navbar .nav-links a:hover {
-    background-color: #af16d5;
-
-}
-
 .viewbox{
     /* border: 2px solid black; */
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     position: absolute;
     margin-top: 0px;
     background-image: linear-gradient(rgba(0, 18, 51, 0.8), rgba(0, 0, 0, 0.9)), url(../images/bg4.jpg);
@@ -190,3 +135,8 @@
       left: 1260px;
   }
 
+
+  footer{
+    position: absolute;
+    bottom: 0px;
+  }
