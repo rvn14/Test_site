@@ -12,7 +12,7 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position:  center center-bottom;
 height: 100vh;
-background-ov
+
 }
 .selection{
     color:#fff;
@@ -253,7 +253,7 @@ section .option_list .option .icon{
     background: #f8d7da;
     border-color: #a42834;
 }
-footer{
+.quiz_box footer{
     height: 60px;
     padding: 0 30px;
     display: flex;
@@ -261,18 +261,18 @@ footer{
     justify-content: space-between;
     border-top: 1px solid lightgrey;
 }
-footer .total_que span{
+.quiz_box footer .total_que span{
     display: flex;
     user-select: none;
 }
-footer .total_que span p{
+.quiz_box footer .total_que span p{
     font-weight: 500;
     padding: 0 5px;
 }
-footer .total_que span p:first-child{
+.quiz_box footer .total_que span p:first-child{
     padding-left: 0px;
 }
-footer button{
+.quiz_box footer button{
     height: 40px;
     padding: 0 13px;
     font-size: 18px;
@@ -290,10 +290,10 @@ footer button{
     transform: scale(0.95);
     transition: all 0.3s ease;
 }
-footer button:hover{
+.quiz_box footer button:hover{
     background: #0263ca;
 }
-footer button.show{
+.quiz_box footer button.show{
     opacity: 1;
     pointer-events: auto;
     transform: scale(1);
@@ -362,4 +362,9 @@ footer button.show{
 .buttons button.quit:hover{
     color: #fff;
     background: #007bff;
+}
+
+footer{
+    position: absolute;
+    bottom: -80px;
 }
