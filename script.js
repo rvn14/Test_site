@@ -17,7 +17,7 @@ function rtClock() {
     minutes = ("0" + minutes).slice(-2);
     seconds = ("0" + seconds).slice(-2);
 
-    document.getElementById('clock').innerHTML = `- ${hours}:${minutes}:${seconds} -`;
+    document.getElementById('clock').innerHTML = `${hours}:${minutes}:${seconds}`;
 
 }
 
