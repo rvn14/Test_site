@@ -24,3 +24,9 @@ function rtClock() {
 
 setInterval(rtClock,1000);
 
+function toggle() {
+    var blur = document.getElementById('content');
+    blur.classList.toggle('active');
+    var popup = document.getElementById('popup');
+    popup.classList.toggle('active');
+}

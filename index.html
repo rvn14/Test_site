@@ -10,20 +10,31 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Audiowide&family=Cairo:wght@600&family=Changa:wght@300&family=Cinzel&family=Montserrat:ital,wght@0,700;1,700&family=Orbitron:wght@500&family=Poppins:ital,wght@0,700;0,800;1,400;1,600;1,700;1,800&family=Source+Code+Pro:ital,wght@0,400;0,500;1,400;1,500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Testsite-2</title>
 </head>
 <body>
-    <div class="page-wrapper">
-        <nav class="navbar"><div class="clock" id="clock"></div></nav>
+    <div class="page-wrapper" id="page-wrapper">
+        <div class="content" id="content">
+        <nav class="navbar">
+            <div class="logo-navbar"></div>
+            <div class="clock" id="clock"></div>
+            
+        </nav>
         
         <div class="logo-wrapper">
             <div class="phrase">CREATIVE</div>
             <div class="designs">-DESIGNS-</div>
+            <a href="#" class="button" onclick="toggle()">Click to proceed</a>
+        </div>
         </div>
     </div>
-
+    <div class="popup" id="popup"><a href="#" class="button" onclick="toggle()"><span class="material-symbols-outlined">
+        close
+    </span></a></div>
 
     
     
