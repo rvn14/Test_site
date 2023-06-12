@@ -18,6 +18,7 @@ function rtClock() {
     seconds = ("0" + seconds).slice(-2);
 
     document.getElementById('clock').innerHTML = `${hours}:${minutes}:${seconds}`;
+    
 
 }
 
