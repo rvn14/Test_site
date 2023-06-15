@@ -138,11 +138,18 @@ body {
     /* border: 2px solid white; */
     width: 60vh;
     height: 60vh;
-    background-image: url(assests/meme1.png);
+    background-image: url(assests/meme1sml.png);
     background-position: center;
     background-size: cover;
     box-shadow: 0 5px 30px rgba(0, 0, 0, .50);
     transition: 0.5s;
+}
+
+.meme1{
+    width: 60vh;
+    height: 60vh;
+    
+    
 }
 #popup a{
     position: absolute;
@@ -183,6 +190,43 @@ body {
 }
 
 
+.popup.loaded > img{
+    opacity: 1;
+}
+
+.popup > img{
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+.popup{
+    position: relative;
+}
+.popup::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: transparent;
+    animation: pulse 2s infinite;
+}
+.popup.loaded::before{
+    animation: 0s;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+@keyframes pulse{
+    0%{
+        background-color: rgba(255, 255, 255, 0);
+    }
+    50%{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    100%{
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+
 @media screen and (max-width: 700px) {
     .clock{
         font-size: 25px;
@@ -201,5 +245,10 @@ body {
     #popup{
         width: 40vh;
         height: 40vh;
+    }
+
+    .meme1{
+    width: 40vh;
+    height: 40vh;
     }
 }

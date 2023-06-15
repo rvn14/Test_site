@@ -22,11 +22,27 @@ function rtClock() {
 
 }
 
-setInterval(rtClock,1000);
-
 function toggle() {
     var blur = document.getElementById('content');
     blur.classList.toggle('active');
     var popup = document.getElementById('popup');
     popup.classList.toggle('active');
 }
+
+const blurimg = document.getElementById('popup');
+const img =document.querySelector('img');
+
+function loaded() {
+    blurimg.classList.add("loaded");
+}
+
+if (img.complete) {
+    loaded()
+} else {
+    img.addEventListener("load",loaded);
+}
+
+
+
+
+setInterval(rtClock, 1000);
