@@ -32,12 +32,12 @@ function toggle() {
 const blurimg = document.getElementById('popup');
 const img =document.querySelector('img');
 
-function loaded() {
+const loaded = () => {
     blurimg.classList.add("loaded");
 }
 
 if (img.complete) {
-    loaded()
+    loaded();
 } else {
     img.addEventListener("load",loaded);
 }
